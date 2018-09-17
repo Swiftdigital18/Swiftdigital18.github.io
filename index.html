@@ -122,6 +122,7 @@ a:hover {border-bottom:2px dotted #11b5bb; color:#000000;}
 	var cu = {}; 
 	cu.cu_POSITION = frm.elements['cu[POSITION]'].value;
 	cu.cu_DIETARY_REQUIREMENTS = frm.elements['cu[DIETARY_REQUIREMENTS]'].value;
+	cu.cu_NUMBER_OF_STUDENT = frm.elements['cu[NUMBER_OF_STUDENT]'].value;
 	
 	var gr = ['zzzz5b9effff8401a750']; // One or more mail group IDs separated by commas 
 	var my_micro_site = "https://cantaloupe.e-newsletter.com.au"; 
@@ -229,6 +230,17 @@ a:hover {border-bottom:2px dotted #11b5bb; color:#000000;}
 							<tr>
 								<td width="150" align="right" valign="middle"><strong>Dietary Requirements:</strong></td>
 								<td><input type="text" name="cu[DIETARY_REQUIREMENTS]" id="cu[DIETARY_REQUIREMENTS]" size="20" maxlength="40" value="" style="width: 250px;"></td>
+							</tr>
+							<tr>
+								<td width="150" align="right" valign="middle"><strong>How many tickets would you like to apply for: </strong></td>
+								<td>
+								<select class="form-control" name="cu[cu_NUMBER_OF_STUDENT]" style="-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s; background: #ffffff none; border: 1px solid #cccccc; border-radius: 4px; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-sizing: border-box; color: #555555; display: block; font-family: inherit; font-size: 14px; height: 34px; line-height: 1.42857143; padding: 6px 12px; transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; width: auto !important;">
+								<option value="" style="box-sizing: border-box;"></option>
+								<option value="zzzz5b90bdf283353544" style="box-sizing: border-box;">1 (1 concession ticket)</option>
+								<option value="zzzz5b90bdf278ccb208" style="box-sizing: border-box;">4 (3 students, 1 teacher)</option>
+								<option value="zzzz5b90bdf2817b1139" style="box-sizing: border-box;">8 (7 students, 1 teacher)</option></select></div>
+								</td>
+</td>
 							</tr>
 							<tr>
 								<td>&nbsp;</td>
