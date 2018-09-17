@@ -1,7 +1,282 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<header><title> GROUP TEST</title></header>
-<body>
-CB LP CLICKED MG 1
-<script src="http://cantaloupe.e-newsletter.com.au/tracker/tracker.js?t3=zzzz4f5456669e7c8339&cb_id=zzzz5af5451e570e1280&checksum=efd19af078264fa81b25764893ff34602f65fbb7fde294bb8d4f9d5fa86c4239"></script>
+<head>
+<meta name="robots" content="noindex, noarchive">
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+
+<title>Retest Staging Double Opt In - Subscribe</title>
+
+                <!-- STYLES -->
+                <style type="text/css">
+.ReadMsgBody {
+	width: 100%;
+}
+.ExternalClass {
+	width: 100%;
+}
+body {
+	font-family:Helvetica, Arial, sans-serif;
+	color:#000000;
+	font-size:13px;
+	background-image: url('http://cantaloupe.e-newsletter.com.au/media/dynamic/id/zzzz4f5456669e7c8339zzzz4f73aa8ab313b645/bg.gif');
+	 background-repeat: repeat-y no-repeat;
+background-color: #FFF;
+margin: 0;
+   padding: 0;
+}
+
+.im {
+color: #070707;
+}
+
+a {color:#ff497c; font-weight:bold; text-decoration:none;}
+a:visited {color:#ff497c; font-weight:bold; text-decoration:none;}
+a:hover {border-bottom:2px dotted #11b5bb; color:#000000;}
+
+.authorwhite img {border:1px solid #000000;}
+.author img {border:1px solid #ffffff;}
+
+.black a {color:#070707 !important;}
+.black a:visited {color:#070707 !important;}
+
+.pfwdbottom a {color:#070707; font-weight:bold; font-size:12px; text-decoration:none;}
+.pfwdbottom a:visited {color:#070707; font-weight:bold; font-size:12px; text-decoration:none;}
+
+.pfwd a {color:#11b5bb; font-weight:bold; font-size:12px; text-decoration:none;}
+.pfwd a:visited {color:#11b5bb; font-weight:bold; font-size:12px; text-decoration:none;}
+
+.pfwdpink a {color:#ff497c; font-weight:bold; font-size:12px; text-decoration:none;}
+.pfwdpink a:visited {color:#ff497c; font-weight:bold; font-size:12px; text-decoration:none;}
+
+
+
+</style>
+
+                <style type="text/css">
+				
+				input{
+	-moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);
+
+	-webkit-transition:border linear 0.2s,box-shadow linear 0.2s;
+	-moz-transition:border linear 0.2s,box-shadow linear 0.2s;
+	-ms-transition:border linear 0.2s,box-shadow linear 0.2s;
+	-o-transition:border linear 0.2s,box-shadow linear 0.2s;
+	transition:border linear 0.2s,box-shadow linear 0.2s;
+
+	border: 1px solid #ccc;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	color: #555555;
+	display: inline-block;
+	font-size: 13px;
+	line-height: 30px;
+	margin-bottom: 9px;
+	padding: 4px;
+    width: 260px;
+}
+
+
+.btn{
+	-moz-border-bottom-colors: none;
+	-moz-border-image: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background-color: #ffffff;
+	background-image: -moz-linear-gradient(center top , #FFFFFF, #FFFFFF 25%, #E6E6E6);
+	background-repeat: no-repeat;
+	border-color: #CCCCCC #CCCCCC #BBBBBB;
+	border-radius: 4px 4px 4px 4px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+	color: #333333;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 13px;
+	padding: 5px;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+				
+				</style>
+				
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script type="text/javascript">
+	function subscribeUser(){
+		frm = document.subscribe;
+		var st = {};
+		st.TITLE = frm.elements['st[TITLE]'].value;
+		st.FIRST_NAME = frm.elements['st[FIRST_NAME]'].value;
+		st.LAST_NAME = frm.elements['st[LAST_NAME]'].value;
+		st.EMAIL = frm.elements['st[EMAIL]'].value;
+		st.MOBILE = frm.elements['st[MOBILE]'].value;
+
+		var cu = {};
+		//cu.cu_5796_TEST_1 = frm.elements['cu[5796_TEST_1]'].value;
+		cu.cu_POSITION = frm.elements['cu[POSITION]'].value;
+		cu.cu_DIETARY_REQUIREMENTS = frm.elements['cu[DIETARY_REQUIREMENTS]'].value;
+		
+		var gr = ['zzzz5b9efebc2b4d3532'];
+	
+		$.getJSON("https://cantaloupe.e-newsletter.com.au/scripts/subscribe/subscribe.php?callback=?",
+		  {
+			st: st,
+			cu: cu,
+			gr: gr,
+			method: 'updateall',
+			format: "json",
+			double_opt_in: true,
+			double_opt_in_subject: "Double Opt in Confirmation Email",
+			return_url: "https://cantaloupe.e-newsletter.com.au/subscription-double-opt-in-thank-you-page"
+		  },
+		  function(data) {
+			console.log(data);
+		  });
+		}
+	</script>
+                
+                </head>
+
+<body bgcolor="#ffffff" style="margin:0;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="229">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+    </td>
+    <td width="650" valign="top" bgcolor="#ffffff"><table width="650" border="0" cellspacing="0" cellpadding="0" align="center">
+
+                <!-- STATICBANNER -->
+                <tr>
+   <td width="650" align="left" valign="bottom" style="line-height:50%;"><img src="https://suitelive.s3-ap-southeast-2.amazonaws.com/sd_images/mit47793dd06cbf9c2f2zzzz5b88b0994aca3468" width="650" height="214" alt="CANTELOUPE TRAVEL" style="text-align:center; font-weight:bold; font-size:45px;"></td>
+        </tr>
+                
+                
+                <!-- Canteloupe Travel - Region - NAV -->
+                        <tr>
+        </tr>
+<tr>
+</table>
+  </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    
+    <td align="left" valign="top">
+    
+    <!-- main content -->
+    <table width="650" border="0" cellspacing="0" cellpadding="0">
+
+               
+                        <tr>
+          <td width="650" align="left" valign="top" bgcolor="#FFFFFF" style="padding-bottom:5px;">
+          
+          
+          <table width="650" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="left" valign="top" width="20">&nbsp;</td>
+                <!-- left hand column -->
+                
+                <!-- end left -->
+               <td align="left" valign="top" width="610" style="padding:0px 0px 30px 0px;font-family:Helvetica, Arial, sans-serif;color:#000;font-size:13px; line-height:20px;">
+			    <!-- Start -->
+				<table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" style="font-family:arial, Sans-Serif; font-size:12px;">
+					<tr>
+						<td align="center" style="color:#000000; font-size:16px; padding-bottom:20px; font-weight:bold;">Live Double Opt In</td>
+					</tr>
+					<tr>
+						<td valign="top">
+							<form name="subscribe" action="/action_page.php" method="post" onsubmit="return validateForm();"><input type="checkbox" name="name_email_halt" style="display: none;" value="yes"><script type="text/javascript">if (location.hash === "#spambot") { setTimeout("alert('Spambot or form pre-filler detected.');", 250); }</script>         
+							<input type="hidden" name="parent_id" value="zzzz52a6974176a24826">
+							<table border="0" cellspacing="10" cellpadding="0" style="font-family: Arial, sans-serif; font-size: 12px;">
+							<tr>
+								<td width="150" align="right" valign="middle"> <strong>Title:</strong></td>
+								<td><input type="text" name="st[TITLE]" id="st[TITLE]" size="20" maxlength="40" value="" style="width: 250px;"></td>
+							</tr>
+							<tr>
+								<td width="150" align="right" valign="middle"><strong>First Name:</strong></td>
+								<td><input type="text" name="st[FIRST_NAME]" id="st[FIRST_NAME]" size="20" maxlength="40" value="" style="width: 250px;"></td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"> <strong>Last Name:</strong></td>
+								<td><input type="text" name="st[LAST_NAME]" id="st[LAST_NAME]" size="20" maxlength="40" value="" style="width: 250px;"></td>
+							</tr>
+							<tr>
+								<td align="right" valign="middle"><strong>Email:</strong></td>
+								<td><input type="text" name="st[EMAIL]" id="st[EMAIL]" size="20" maxlength="200" value="" style="width: 250px;"></td>
+							</tr>
+							<tr>
+								<td width="150" align="right" valign="middle"><strong>Mobile:</strong></td>
+								<td><input type="text" name="st[MOBILE]" id="st[MOBILE]" size="20" maxlength="40" value="" style="width: 250px;"></td>
+							</tr>
+							<tr>
+								<td width="150" align="right" valign="middle"> <strong>Position:</strong></td>
+								<td><input type="text" name="cu[POSITION]" id="cu[POSITION]" size="20" maxlength="40" value="" style="width: 250px;"></td>
+							</tr>
+							<tr>
+								<td width="150" align="right" valign="middle"><strong>Dietary Requirements:</strong></td>
+								<td><input type="text" name="cu[DIETARY_REQUIREMENTS]" id="cu[DIETARY_REQUIREMENTS]" size="20" maxlength="40" value="" style="width: 250px;"></td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td><input type="button" class="btn" name="submit" onclick="subscribeUser();"  value="Subscribe"></td>
+							</tr>
+							</table>
+							</form>
+						</td>
+					</tr>
+					
+				</table>
+				<!-- End -->
+</td>
+                <!-- right hand column -->
+                
+                <!-- end right -->
+                <td align="left" valign="top" width="20">&nbsp;</td>
+              </tr>
+            </table>
+            
+          </td>
+        </tr>
+
+                <!-- Canteloupe Travel - Article - BottomArticle -->
+                              
+                <!-- FOOTER -->
+                        <tr>
+          <td width="650" align="left" valign="top">
+          <table width="100%">
+  <tr>
+<td width="650" align="left" valign="bottom" style="line-height:50%;"><img src="https://suitelive.s3-ap-southeast-2.amazonaws.com/sd_images/mit47793dd06cbf9c2f2zzzz5b88bede71236957" width="650" height="56" alt="CANTELOUPE TRAVEL" style="text-align:center; font-weight:bold; font-size:45px;"></td>
+        </tr>
+</table>
+
+  </td>
+        </tr>
+
+                
+      </table>
+      <!-- end main content -->
+      
+    </td>
+   
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+
+</table>
+<div id="plplug" style="font-family:Arial, Helvetica, sans-serif; font-size:10px; text-align: center; color: #999;"> <a title="This email marketing subscription form is powered by SwiftDigital e-newsletter software" href="http://cantaloupe.e-newsletter.com.au/link/id/zzzz4fa20944c6a9f610/page.html" target="_blank" class="plplug" style="text-decoration: none; color: #999;">This email marketing</a> subscription form is powered by <a title="This email marketing subscription form is powered by SwiftDigital e-newsletter software" href="http://cantaloupe.e-newsletter.com.au/link/id/zzzz4fa20944c7121578/page.html" target="_blank" class="plplug" style="text-decoration: none; color: #999;"><span style="color:#3293e8; font-weight:bold">SwiftDigital</span>
+ e-newsletter software.</a></div>
 </body>
 </html>
