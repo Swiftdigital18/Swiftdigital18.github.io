@@ -107,40 +107,40 @@ a:hover {border-bottom:2px dotted #11b5bb; color:#000000;}
 				
 				</style>
 				
-<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
-	<script type="text/javascript">
-	function subscribeUser(){
-		frm = document.subscribe;
-		var st = {};
-		st.TITLE = frm.elements['st[TITLE]'].value;
-		st.FIRST_NAME = frm.elements['st[FIRST_NAME]'].value;
-		st.LAST_NAME = frm.elements['st[LAST_NAME]'].value;
-		st.EMAIL = frm.elements['st[EMAIL]'].value;
-		st.MOBILE = frm.elements['st[MOBILE]'].value;
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
 
-		var cu = {};
-		//cu.cu_5796_TEST_1 = frm.elements['cu[5796_TEST_1]'].value;
-		cu.cu_POSITION = frm.elements['cu[POSITION]'].value;
-		cu.cu_DIETARY_REQUIREMENTS = frm.elements['cu[DIETARY_REQUIREMENTS]'].value;
-		
-		var gr = ['zzzz5b9efebc2b4d3532'];
+<script type="text/javascript"> 
+
+	function subscribeUser(){ 
+	frm = document.subscribe; 
+	var st = {}; 
+	st.TITLE = frm.elements['st[TITLE]'].value;
+	st.FIRST_NAME = frm.elements['st[FIRST_NAME]'].value;
+	st.LAST_NAME = frm.elements['st[LAST_NAME]'].value;
+	st.EMAIL = frm.elements['st[EMAIL]'].value;
+	st.MOBILE = frm.elements['st[MOBILE]'].value;
+	var cu = {}; 
+	cu.cu_POSITION = frm.elements['cu[POSITION]'].value;
+	cu.cu_DIETARY_REQUIREMENTS = frm.elements['cu[DIETARY_REQUIREMENTS]'].value;
 	
-		$.getJSON("https://cantaloupe.e-newsletter.com.au/scripts/subscribe/subscribe.php?callback=?",
-		  {
-			st: st,
-			cu: cu,
-			gr: gr,
-			method: 'updateall',
-			format: "json",
-			double_opt_in: true,
-			double_opt_in_subject: "Double Opt in Confirmation Email",
-			return_url: "https://cantaloupe.e-newsletter.com.au/subscription-double-opt-in-thank-you-page"
-		  },
-		  function(data) {
-			console.log(data);
-		  });
-		}
-	</script>
+	var gr = ['zzzz5b9effff8401a750']; // One or more mail group IDs separated by commas 
+	var my_micro_site = "https://cantaloupe.e-newsletter.com.au"; 
+
+	$.getJSON(my_micro_site + "/scripts/subscribe/subscribe.php?callback=?", 
+	{ 
+		st: st, 
+		cu: cu, 
+		gr: gr, 
+		notify_subscription: ‘nino.t@swiftdigital.com.au’,
+		method: 'updategroups', 
+		format: "json" 
+	},function(data) { 
+    $('#formDiv').hide(); 
+    $('#messageDiv').html(data.message); 
+	}); 
+	} 
+</script>
+
                 
                 </head>
 
@@ -161,7 +161,7 @@ a:hover {border-bottom:2px dotted #11b5bb; color:#000000;}
 
                 <!-- STATICBANNER -->
                 <tr>
-   <td width="650" align="left" valign="bottom" style="line-height:50%;"><img src="https://suitelive.s3-ap-southeast-2.amazonaws.com/sd_images/mit47793dd06cbf9c2f2zzzz5b88b0994aca3468" width="650" height="214" alt="CANTELOUPE TRAVEL" style="text-align:center; font-weight:bold; font-size:45px;"></td>
+   <td width="650" align="left" valign="bottom" style="line-height:50%;"><img src="https://suitelive.s3-ap-southeast-2.amazonaws.com/sd_images/mit47793dd06cbf9c2f2zzzz5b88b0994aca3468" width="650" height="214" style="text-align:center; font-weight:bold; font-size:45px;"></td>
         </tr>
                 
                 
@@ -195,7 +195,7 @@ a:hover {border-bottom:2px dotted #11b5bb; color:#000000;}
 			    <!-- Start -->
 				<table align="center" width="80%" border="0" cellspacing="0" cellpadding="0" style="font-family:arial, Sans-Serif; font-size:12px;">
 					<tr>
-						<td align="center" style="color:#000000; font-size:16px; padding-bottom:20px; font-weight:bold;">Live Double Opt In</td>
+						<td align="center" style="color:#000000; font-size:16px; padding-bottom:20px; font-weight:bold;">Live Subscription API Email Notification</td>
 					</tr>
 					<tr>
 						<td valign="top">
